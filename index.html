@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Seating</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Restaurant Seating</h1>
+    <div class="table-container">
+        <label>Enter the number of guests</label>
+        <input type="text" id="guests" placeholder="Enter #s less than 12">
+        <button onclick="changeColor()">Enter</button>
+        <!-- <select id="table">
+            <option value="2">Table for 2</option>
+            <option value="4">Table for 4</option>
+            <option value="6">Table for 6</option>
+            <option value="8">Table for 8</option>
+            <option value="10">Table for 10</option>
+            <option value="12">Table for 12</option>
+        </select> -->
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="table available"></div>
+            <small>Available</small>
+        </li>
+        <li>
+            <div class="table selected still"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="table occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+    <div class="button">
+        <button onclick="confirm()">Confirm</button>
+        <button onclick="remove()">Remove</button>
+        <button onclick="dashboard()">Dashboard</button>
+    </div>
+    <div class="container">
+        
+        <div class="stage"></div>
+        
+        <div class="row">
+            <div class="table eight" value='1'><span>1</span></div>
+            <div class="table four" value='2'>2</div>
+            <div class="table eight occupied" value='3'>3</div>
+            <div class="table four" value='4'>4</div>
+            <div class="table twelve" value='5'>5</div>
+            <div class="table occupied" value='6'>6</div>
+        </div>
+        <div class="row">
+            <div class="table twelve occupied">7</div>
+            <div class="table four">8</div>
+            <div class="table eight">9</div>
+            <div class="table four">10</div>
+            <div class="table eight">11</div>
+            <div class="table twelve">12</div>
+        </div>
+        <div class="row">
+            <div class="table eight">13</div>
+            <div class="table four">14</div>
+            <div class="table twelve">15</div>
+            <div class="table four occupied">16</div>
+            <div class="table eight">17</div>
+            <div class="table four">18</div>
+        </div>
+        <!-- <div class="row">
+            <div class="table"></div>
+            <div class="table eight"></div>
+            <div class="table"></div>
+            <div class="table eight"></div>
+            <div class="table"></div>
+            <div class="table twelve"></div>
+        </div>
+        <div class="row">
+            <div class="table"></div>
+            <div class="table eight"></div>
+            <div class="table"></div>
+            <div class="table twelve"></div>
+            <div class="table"></div>
+            <div class="table eight"></div>
+        </div> -->
+        
+    </div>
+    <h3>Table Size</h3>
+    <ul class="tableSize">
+        <li>
+            <div class="table four"></div>
+            <small>Up to 4 people</small>
+        </li>
+        <li>
+            <div class="table eight"></div>
+            <small>For 5 to 8 people</small>
+        </li>
+        <li>
+            <div class="table twelve"></div>
+            <small>For 9 to 12 people</small>
+        </li>
+    </ul>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: darkred;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', 'san-serif';
+}
+.button{
+    display: flex;
+}
+button{
+    width: 100px;
+    border: 1px solid blue;
+}
+.container{
+    perspective: 1000px;
+    margin: 30px;
+}
+
+.stage{
+    background-color: rgb(233, 27, 38);
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid .5px black;
+    border-bottom: solid;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table{
+    background-color: rgb(236, 158, 68);
+    height: 40px;
+    width: 40px;
+    margin: 15px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: solid .5px silver;
+}
+
+.noShow{
+    background-color: darkred;
+}
+
+
+.table.twelve{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+.table.eight{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.table.occupied{
+    background-color: white;
+    color: orangered;
+}
+
+.table.selected{
+    background-color: cyan;
+}
+
+.table:not(.occupied, .noShow):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* .table:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+} */
+
+.showcase .table:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase{
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: lightslategray;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tableSize{
+
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: lightslategray;
+    list-style-type: none;
+    display: flex;
+    justify-content: row;
+}
+
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 10px;
+}
