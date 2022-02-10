@@ -87,6 +87,10 @@ button{
     background-color: cyan;
 }
 
+.table.still{
+    background-color: cyan;
+}
+
 .table:not(.occupied, .noShow):hover{
     cursor: pointer;
     transform: scale(1.2);
