@@ -23,8 +23,15 @@ button{
 .container{
     perspective: 1000px;
     margin: 30px;
+    
 }
 
+#learn{
+    height: 40px;
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 .stage{
     background-color: rgb(233, 27, 38);
     height: 70px;
