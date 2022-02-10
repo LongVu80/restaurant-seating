@@ -11,3 +11,5 @@ to remove table with occupied status to available:
 go to dashboard,
 choose the occupied table,
 click remove.
+
+https://longvu80.github.io/restaurant-seating/
