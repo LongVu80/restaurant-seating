@@ -30,7 +30,6 @@ function confirm(){
     $(document).ready(function(){
         $('.selected').addClass('occupied');
         $('.selected').removeClass('selected');
-        $('.still').addClass('selected');
     })
 }
 
@@ -38,7 +37,7 @@ function remove(){
     $(document).ready(function(){
         $('.occupied').addClass('table');
         $('.selected').removeClass('occupied');
-        $('.still').addClass('selected');
+        $('.selected').removeClass('selected');
     })
 }
 
